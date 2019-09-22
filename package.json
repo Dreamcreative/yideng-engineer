@@ -1,0 +1,43 @@
+{
+  "name": "yideng-engineer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "installConfig": {
+    "pnp": true
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "docs": "jsdoc ./**/*.js -d ./docs/jsdocs",
+    "build": "babel ./assets/script/index.js -o ./assets/script/index.bundle.js",
+    "client:dev": "scripty",
+    "client:server": "scripty",
+    "client:prod": "scripty"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@config": "config",
+    "@models": "models"
+  },
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-simple-router": "^0.2.0",
+    "koa-swig": "^2.2.1",
+    "lodash": "^4.17.15",
+    "module-alias": "^2.2.1",
+    "nodemon": "^1.19.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-cli": "^6.26.0",
+    "cross-env": "^5.2.1",
+    "koa-static": "^5.0.0",
+    "log4js": "^5.1.0",
+    "scripty": "^1.9.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

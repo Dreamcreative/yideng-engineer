@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="中文">
+  <title>{% block title %}My Site{% endblock %}</title>
+  {% block head %}
+  {% endblock  %}
+  <link rel="stylesheet" type="text/css"  href="/styles/index.css"></link>
+</head>
+</head>
+<body>
+  <div>
+
+    {% block content %}
+    <h1>这是layout页面</h1>
+
+    {% endblock %}
+  </div>
+  {% block scripts %}
+    
+    {% endblock %}
+</body>
+</html>
